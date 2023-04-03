@@ -8,7 +8,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="второй фрагмент"
+        android:text="третий фрагмент"
         android:textSize="34sp" />
 
 </LinearLayout>

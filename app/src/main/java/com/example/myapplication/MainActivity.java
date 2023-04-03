@@ -18,11 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
+
         MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
 
         ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(adapter); // устанавливаем адаптер
-        viewPager.setCurrentItem(1); // выводим второй экран
+        viewPager.setCurrentItem(0); // выводим первый экран
     }
 
     public static class MyAdapter extends FragmentPagerAdapter {
@@ -44,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     return new Frag1();
                 case 1:
                     return new Frag2();
+                case 2:
+                    return new Frag3();
 
                 default:
                     return new Frag1();
